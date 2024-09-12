@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sad Mood</title>
+    <style>
+      div {
+			font-family: arial;
+		}
+        .container{
+            background-color: rgb(240, 218, 189);
+            margin: auto;
+            width: 1000px;
+        }
+		h1 {
+			font-size: 18pt;
+            color: rgb(76, 108, 215); 
+			font-family: times;
+            text-align: center;
+		}
+        h2 {
+            color: rgb(76, 108, 215); 
+        }
+        a {
+            color: red; 
+            text-decoration: underline;
+            text-decoration-color: red; 
+        }
+        img {
+            display: block;
+            margin: 0 auto; 
+        }
+		label {
+			display: inline-block;
+			width: 80px; 
+		}
+        .radio-group {
+            display: flex;
+            align-items: center;
+        }
+        .radio-group label {
+            margin-right: 1000px; /* Khoảng cách nhỏ giữa nhãn và nút */
+        }
+        .radio-group input {
+            margin-left: 100px; /* Khoảng cách nhỏ giữa nút radio và nhãn kế tiếp */
+        }
+     </style>
+</head>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="../moi/sad.jpg" alt="Sad Mood" width="100" height="50">
+            <h1>Sad Mood</h1>
+        </div>
+        <h2>Current courses</h2>
+        <ul>
+            <li>CSE 123 - CSS (<a href="../lab2/index.html">Link</a>)</li>
+            <li>CSE 456 - Java Script (<a href="https://www.w3schools.com/js/default.asp">Link</a>)</li>
+            <li>CSE 122 - Bootstrap (<a href="../moi/index.html">Link</a>)</li>
+        </ul>
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Games</li>
+            <li>Music</li>
+            <li>Movies</li>
+        </ul>
+        <div>
+            <h2>Courses</h2>
+            <table border="1" cellspacing="0">
+                <tr>
+                    <th>Course Number</th>
+                    <th>Course Title</th>
+                    <th>Semester Taken</th>
+                </tr>
+                <tr>
+                    <th colspan="3">For Credit</th>
+                </tr>
+                <tr  style="color:rgb(0, 13, 255); background: white">
+                    <td><b>6.813</b></td>
+                    <td>User Interface Design</td>
+                    <td>Spring 2014</td>
+                </tr>
+                <tr>
+                    <td style="color:rgb(0, 13, 255)"><b>6.034</b></td>
+                    <td>Artificial Intelligence Algorithms</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr style="background:white">
+                    <td style="color:rgb(0, 13, 255)"><b>6.006</b></td>
+                    <td>Introduction to Algorithms</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr>
+                    <th colspan="3">Listener</th>
+                </tr>
+                <tr style="background:white">
+                    <td style="color:rgb(0, 13, 255)"><b>6.867</b></td>
+                    <td>Machine Learning</td>
+                    <td>Fall 2013</td>
+                </tr>
+                <tr>
+                    <td style="color:rgb(0, 13, 255)"><b>6.830</b></td>
+                    <td>Database Systems</td>
+                    <td>Fall 2012</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <h2>Submit Information</h2>
+            <form>
+                <table>
+                   <tr>
+                    <td> <label for="txtFullname">Full name:</label></td>
+                    <td> <input type="text" name = "fn" id="txtfn"></td>
+                   </tr>
+                   <tr>
+                    <td> Gender: </td>
+                    <td> 
+                        <label for="rdom">Male</label>
+                        <input type="radio" name="gen" id="rdom" value="1" checked>
+                        <label for="rdofm">Female</label>
+                        <input type="radio" name="gen" id="rdofm" value="2">
+                    </td>
+                   </tr>
+                   <tr>
+                    <td> Hobies: </td>
+                    <td>
+                        <label for="chkmusic">Music</label>
+                        <input type="checkbox" name="music" id="chkmusic">
+                        <br>
+                        <label for="chkgames">Games</label>
+                        <input type="checkbox" name="games" id="chkgames">
+                        <br>
+                        <label for="chkmovies">Movies</label>
+                        <input type="checkbox" name="movies" id="chkmovies">
+                        <br>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td><label for="txtdob">Date of birth: </label></td>
+                    <td><input type="date"name ="dob" id="txtdob"></td>
+                   </tr>
+                   <tr>
+                    <td> <label for="cbocountry">Country: </label></td>
+                    <td>
+                        <select name="country" id="cbocountry">
+                            <option value="1">HaNoi</option>
+                            <option value="2">Tokyo</option>
+                            <option value="3">Moscow</option>
+                            <option value="4">Paris</option>
+                            <option value="5">Seoul</option>
+                        </select>
+                    </td>
+                   </tr>
+                   <tr>
+                    <td> <label for="txtf">Picture: </label></td>
+                    <td> <input type="file" name ="pic" id="txtf"></td>
+                   </tr>
+                   <tr>
+                    <td> <label for="txtmail">Email: </label></td>
+                    <td> <input type="Email"name ="email" id = "txtmail"></td>
+                   </tr>
+                   <tr>
+                    <td><label for="txtpass">Password: </label></td>
+                    <td><input type="password" name ="pass" id="txtpass"></td>
+                   </tr>
+                   <tr>
+                    <td><label for="txtfavw">Favorite wors: </label></td>
+                    <td><textarea name="favw" id="txtfavw" cols="30" rows="5"></textarea></td>
+                   </tr>
+                   <tr>
+                    <td></td>
+                    <td>
+                        <input type="submit" value="submit">
+                        <input type="reset" value =" reset">
+                    </td>
+                   </tr>
+
+                </table>
+            </form>
+        </div>
+
+        <a href="../moi/index.html">Back</a>
+    </div>
+</body>
+</html>
